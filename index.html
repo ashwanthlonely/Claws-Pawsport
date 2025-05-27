@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="assets/favicon.ico" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pet grooming, travel tips, and curated pet products - all in one platform. Claws and Pawsport is your pet's passport to comfort and care." />
-  <title>Claws & Pawsport</title>
+  <title>Claws Pawsport</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fffaf2;
+      background-color: #221c18;
       color: #3e2c1c;
     }
     .modal-overlay {
@@ -39,42 +39,69 @@
       from { border-color: #d4aa00; }
       to { border-color: #f7d774; }
     }
-    .modal h2 {
-      color: #3e2c1c;
+    @keyframes zoomFlash {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .modal h1 {
+      color: #a71c1c;
       margin-bottom: 1rem;
+      animation: zoomFlash 1.5s infinite;
+      /* font-family: Brush Script MT, Brush Script Std, cursive; */
     }
     .modal p {
       color: #4a2f22;
       font-size: 1.1rem;
     }
     header {
-      background: linear-gradient(to right, #4a2f22, #221c18);
-      color: #fff;
-      padding: 3rem 1rem;
-      text-align: center;
+      background-color: #fff3d6;
+      color: #3e2c1c;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0 0;
-      display: inline-block;
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .brand img.logo {
+      height: 120px;
+      margin-right: 1rem;
+    }
+    .brand p {
+      font-size: 4.5rem;
+      margin: 0;
+      font-family: Brush Script MT, Brush Script Std, cursive;
     }
     header p {
       font-size: 1.2rem;
-      color: #f7d774;
+      color: #4a2f22;
+      text-align: left;
     }
-    .logo {
-      height: 60px;
-      vertical-align: middle;
+    .cta-section {
+      background-color: #e0cfa1;
+      padding: 1.5rem 1rem;
+    }
+    .cta-section p {
+      font-size: 1.2rem;
+      color: #4a2f22;
+      text-align: left;
+      margin: 0 0 1rem 0;
     }
     .cta-buttons {
-      margin-top: 1.5rem;
+      margin-top: 0;
     }
     .cta-buttons a {
       text-decoration: none;
       background: #d4aa00;
       color: #000;
       padding: 0.75rem 1.5rem;
-      margin: 0 0.5rem;
+      margin: 0 0.5rem 0 0;
       border-radius: 8px;
       font-weight: bold;
       transition: background 0.3s;
@@ -87,7 +114,7 @@
       flex-wrap: wrap;
       justify-content: center;
       padding: 3rem 1rem;
-      background-color: #fff3d6;
+      background-color: #221c18;
     }
     .feature {
       background: #fff;
@@ -103,9 +130,13 @@
       margin-bottom: 0.5rem;
     }
     .subscribe {
-      background-color: #d4aa00;
+      background-color: #4a2f22;
       padding: 2rem 1rem;
       text-align: center;
+    }
+    .subscribe h2,
+    .subscribe p {
+      color: #fff;
     }
     .subscribe input[type="email"] {
       padding: 0.75rem;
@@ -117,19 +148,19 @@
     }
     .subscribe button {
       padding: 0.75rem 1.5rem;
-      background-color: #3e2c1c;
-      color: #fff;
+      background-color: #d4aa00;
+      color: #000;
       border: none;
       border-radius: 4px;
       font-weight: bold;
       cursor: pointer;
     }
     .subscribe button:hover {
-      background-color: #221c18;
+      background-color: #b38b00;
     }
     footer {
-      background: #221c18;
-      color: #d4aa00;
+      background: #fff3d6;
+      color: #3e2c1c;
       text-align: center;
       padding: 1rem;
     }
@@ -138,21 +169,29 @@
 <body>
   <div class="modal-overlay">
     <div class="modal">
-      <h2>🚧 Coming Soon! 🚧</h2>
-      <p>Get ready for a tail-wagging experience! Claws & Pawsport is almost here to pamper your pets and guide your adventures together. 🐾</p>
+      <p style="font-family: 'Brush Script MT', 'Brush Script Std', cursive; font-size: 3.5rem;">
+        🐾Claws Pawsport🐾
+      </p>
+      <h1>🚧 Coming Soon! 🚧</h1>
+      <p>Get ready for a tail-wagging experience! Claws Pawsport is almost here to pamper your pets and guide your adventures together. 🐾</p>
     </div>
   </div>
 
   <header>
-    <img src="assets/logo.png" alt="Claws & Pawsport Logo" class="logo">
-    <h1>Claws & Pawsport</h1>
+    <div class="brand">
+      <img src="assets/logo.png" alt="Claws Pawsport Logo" class="logo">
+      <p>Claws Pawsport</p>
+    </div>
+  </header>
+
+  <section class="cta-section">
     <p>Where pets travel, thrive, and shine ✈️🛁🐾</p>
     <div class="cta-buttons">
       <a href="#">🧼 Grooming</a>
       <a href="#">🧳 Travel Tips</a>
       <a href="#">📦 Shop</a>
     </div>
-  </header>
+  </section>
 
   <section class="features">
     <div class="feature">
@@ -179,8 +218,8 @@
   </section>
 
   <footer>
-    <p>© 2025 Claws & Pawsport • All rights reserved</p>
-    <p><a href="#" style="color: #f7d774; text-decoration: underline;">Contact</a> | <a href="#" style="color: #f7d774; text-decoration: underline;">Privacy</a></p>
+    <p>© 2025 Claws Pawsport • All rights reserved</p>
+    <p><a href="#" style="color: #4a2f22; text-decoration: underline;">Contact</a> | <a href="#" style="color: #4a2f22; text-decoration: underline;">Privacy</a></p>
   </footer>
 </body>
 </html>
