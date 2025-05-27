@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pet grooming, travel tips, and curated pet products - all in one platform. Claws and Pawsport is your pet's passport to comfort and care." />
+  <title>Claws & Pawsport</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf2;
+      color: #3e2c1c;
+    }
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .modal {
+      background-color: #fff8dc;
+      border: 3px solid #d4aa00;
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      max-width: 90%;
+      box-shadow: 0 0 15px #d4aa00;
+      animation: flashBorder 1.5s infinite alternate;
+    }
+    @keyframes flashBorder {
+      from { border-color: #d4aa00; }
+      to { border-color: #f7d774; }
+    }
+    .modal h2 {
+      color: #3e2c1c;
+      margin-bottom: 1rem;
+    }
+    .modal p {
+      color: #4a2f22;
+      font-size: 1.1rem;
+    }
+    header {
+      background: linear-gradient(to right, #4a2f22, #221c18);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0 0;
+      display: inline-block;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f7d774;
+    }
+    .logo {
+      height: 60px;
+      vertical-align: middle;
+    }
+    .cta-buttons {
+      margin-top: 1.5rem;
+    }
+    .cta-buttons a {
+      text-decoration: none;
+      background: #d4aa00;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta-buttons a:hover {
+      background: #b38b00;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 3rem 1rem;
+      background-color: #fff3d6;
+    }
+    .feature {
+      background: #fff;
+      border: 2px solid #d4aa00;
+      border-radius: 12px;
+      margin: 1rem;
+      padding: 2rem;
+      max-width: 300px;
+      text-align: center;
+    }
+    .feature h3 {
+      color: #4a2f22;
+      margin-bottom: 0.5rem;
+    }
+    .subscribe {
+      background-color: #d4aa00;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .subscribe input[type="email"] {
+      padding: 0.75rem;
+      width: 250px;
+      max-width: 90%;
+      border: none;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+    }
+    .subscribe button {
+      padding: 0.75rem 1.5rem;
+      background-color: #3e2c1c;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .subscribe button:hover {
+      background-color: #221c18;
+    }
+    footer {
+      background: #221c18;
+      color: #d4aa00;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal-overlay">
+    <div class="modal">
+      <h2>🚧 Coming Soon! 🚧</h2>
+      <p>Get ready for a tail-wagging experience! Claws & Pawsport is almost here to pamper your pets and guide your adventures together. 🐾</p>
+    </div>
+  </div>
+
+  <header>
+    <img src="assets/logo.png" alt="Claws & Pawsport Logo" class="logo">
+    <h1>Claws & Pawsport</h1>
+    <p>Where pets travel, thrive, and shine ✈️🛁🐾</p>
+    <div class="cta-buttons">
+      <a href="#">🧼 Grooming</a>
+      <a href="#">🧳 Travel Tips</a>
+      <a href="#">📦 Shop</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🐶 Premium Grooming</h3>
+      <p>Spa-quality grooming for your pets with certified experts.</p>
+    </div>
+    <div class="feature">
+      <h3>🏨 Pet-Friendly Places</h3>
+      <p>Discover restaurants, hotels, and parks that welcome pets.</p>
+    </div>
+    <div class="feature">
+      <h3>🛍️ Curated Products</h3>
+      <p>Vet-approved food, toys & accessories — delivered to you.</p>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2>Join Our Pack</h2>
+    <p>Subscribe for travel tips, grooming offers & exclusive pet deals!</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Claws & Pawsport • All rights reserved</p>
+    <p><a href="#" style="color: #f7d774; text-decoration: underline;">Contact</a> | <a href="#" style="color: #f7d774; text-decoration: underline;">Privacy</a></p>
+  </footer>
+</body>
+</html>
