@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClawsPawsPort - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script defer src="js/theme-toggle.js"></script>
+</head>
+<body class="light">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">ClawsPawsPort</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="places.html">Pet-Friendly Places</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Drop us a message below and we’ll get back to you.</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="services">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      
+      <!-- Your Access Key (you will replace with your own from web3forms.com) -->
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+      <!-- Send messages to this email -->
+      <input type="hidden" name="email" value="info@clawspawsport.com">
+
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ClawsPawsPort | Made with ❤️ in India</p>
+  </footer>
+
+</body>
+</html>

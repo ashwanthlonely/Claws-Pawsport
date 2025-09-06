@@ -1,0 +1,5 @@
+/* Dark mode */
+body.dark {
+  --bg-color: var(--dark-bg);
+  --text-color: var(--dark-text);
+}

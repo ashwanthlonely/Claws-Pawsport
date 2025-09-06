@@ -1,225 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pet grooming, travel tips, and curated pet products - all in one platform. Claws and Pawsport is your pet's passport to comfort and care." />
-  <title>Claws Pawsport</title>
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #221c18;
-      color: #3e2c1c;
-    }
-    .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    .modal {
-      background-color: #fff8dc;
-      border: 3px solid #d4aa00;
-      border-radius: 16px;
-      padding: 2rem;
-      text-align: center;
-      max-width: 90%;
-      box-shadow: 0 0 15px #d4aa00;
-      animation: flashBorder 1.5s infinite alternate;
-    }
-    @keyframes flashBorder {
-      from { border-color: #d4aa00; }
-      to { border-color: #f7d774; }
-    }
-    @keyframes zoomFlash {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.2); opacity: 0.8; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-    .modal h1 {
-      color: #a71c1c;
-      margin-bottom: 1rem;
-      animation: zoomFlash 1.5s infinite;
-      /* font-family: Brush Script MT, Brush Script Std, cursive; */
-    }
-    .modal p {
-      color: #4a2f22;
-      font-size: 1.1rem;
-    }
-    header {
-      background-color: #fff3d6;
-      color: #3e2c1c;
-      padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-    .brand img.logo {
-      height: 120px;
-      margin-right: 1rem;
-    }
-    .brand p {
-      font-size: 4.5rem;
-      margin: 0;
-      font-family: Brush Script MT, Brush Script Std, cursive;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #4a2f22;
-      text-align: left;
-    }
-    .cta-section {
-      background-color: #e0cfa1;
-      padding: 1.5rem 1rem;
-    }
-    .cta-section p {
-      font-size: 1.2rem;
-      color: #4a2f22;
-      text-align: left;
-      margin: 0 0 1rem 0;
-    }
-    .cta-buttons {
-      margin-top: 0;
-    }
-    .cta-buttons a {
-      text-decoration: none;
-      background: #d4aa00;
-      color: #000;
-      padding: 0.75rem 1.5rem;
-      margin: 0 0.5rem 0 0;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .cta-buttons a:hover {
-      background: #b38b00;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 3rem 1rem;
-      background-color: #221c18;
-    }
-    .feature {
-      background: #fff;
-      border: 2px solid #d4aa00;
-      border-radius: 12px;
-      margin: 1rem;
-      padding: 2rem;
-      max-width: 300px;
-      text-align: center;
-    }
-    .feature h3 {
-      color: #4a2f22;
-      margin-bottom: 0.5rem;
-    }
-    .subscribe {
-      background-color: #4a2f22;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .subscribe h2,
-    .subscribe p {
-      color: #fff;
-    }
-    .subscribe input[type="email"] {
-      padding: 0.75rem;
-      width: 250px;
-      max-width: 90%;
-      border: none;
-      border-radius: 4px;
-      margin-right: 0.5rem;
-    }
-    .subscribe button {
-      padding: 0.75rem 1.5rem;
-      background-color: #d4aa00;
-      color: #000;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .subscribe button:hover {
-      background-color: #b38b00;
-    }
-    footer {
-      background: #fff3d6;
-      color: #3e2c1c;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClawsPawsPort - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script defer src="js/theme-toggle.js"></script>
 </head>
-<body>
-  <div class="modal-overlay">
-    <div class="modal">
-      <p style="font-family: 'Brush Script MT', 'Brush Script Std', cursive; font-size: 3.5rem;">
-        🐾Claws Pawsport🐾
-      </p>
-      <h1>🚧 Coming Soon! 🚧</h1>
-      <p>Get ready for a tail-wagging experience! Claws Pawsport is almost here to pamper your pets and guide your adventures together. 🐾</p>
-    </div>
-  </div>
+<body class="light">
 
+  <!-- Header -->
   <header>
-    <div class="brand">
-      <img src="assets/logo.png" alt="Claws Pawsport Logo" class="logo">
-      <p>Claws Pawsport</p>
-    </div>
+    <div class="logo">ClawsPawsPort</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="places.html">Pet-Friendly Places</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🌙</button>
   </header>
 
-  <section class="cta-section">
-    <p>Where pets travel, thrive, and shine ✈️🛁🐾</p>
-    <div class="cta-buttons">
-      <a href="#">🧼 Grooming</a>
-      <a href="#">🧳 Travel Tips</a>
-      <a href="#">📦 Shop</a>
+  <!-- Hero Section -->
+  <section class="hero full-hero">
+    <div class="hero-text">
+      <h1>Where Pets Travel in Style 🐾</h1>
+      <p>Unique handcrafted pet products and guides to pet-friendly places across India.</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </div>
+    <div class="hero-img">
+      <img src="assets/images/hero-pet.png" alt="Happy Pet">
     </div>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>🐶 Premium Grooming</h3>
-      <p>Spa-quality grooming for your pets with certified experts.</p>
-    </div>
-    <div class="feature">
-      <h3>🏨 Pet-Friendly Places</h3>
-      <p>Discover restaurants, hotels, and parks that welcome pets.</p>
-    </div>
-    <div class="feature">
-      <h3>🛍️ Curated Products</h3>
-      <p>Vet-approved food, toys & accessories — delivered to you.</p>
+  <!-- Services Section -->
+  <section class="services">
+    <h2>What We Offer</h2>
+    <div class="service-grid">
+      <div class="service-card fade-in">
+        <img src="assets/images/products.jpg" alt="Pet Products">
+        <h3>Exclusive Products</h3>
+        <p>Handcrafted toys, accessories, and organic food sourced globally.</p>
+        <a href="products.html" class="btn">Explore</a>
+      </div>
+      <div class="service-card fade-in">
+        <img src="assets/images/places.jpg" alt="Pet-Friendly Places">
+        <h3>Pet-Friendly Places</h3>
+        <p>Restaurants, hotels, parks & cafes across India that welcome pets.</p>
+        <a href="places.html" class="btn">Discover</a>
+      </div>
+      <div class="service-card fade-in">
+        <img src="assets/images/community.jpg" alt="Community">
+        <h3>Pet Parent Community</h3>
+        <p>Connect with fellow pet lovers and share experiences with ClawsPawsPort.</p>
+        <a href="about.html" class="btn">Join Us</a>
+      </div>
     </div>
   </section>
 
-  <section class="subscribe">
-    <h2>Join Our Pack</h2>
-    <p>Subscribe for travel tips, grooming offers & exclusive pet deals!</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
+  <!-- Highlighted Section -->
+  <section class="highlight">
+    <div class="highlight-text">
+      <h2>Made with ❤️ in India</h2>
+      <p>Our handcrafted products combine global designs with Indian artistry, ensuring your pets feel extra special.</p>
+      <a href="products.html" class="btn">Browse Collection</a>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Claws Pawsport • All rights reserved</p>
-    <p><a href="#" style="color: #4a2f22; text-decoration: underline;">Contact</a> | <a href="#" style="color: #4a2f22; text-decoration: underline;">Privacy</a></p>
+    <p>&copy; 2025 ClawsPawsPort | Made with ❤️ in India</p>
   </footer>
+
 </body>
 </html>

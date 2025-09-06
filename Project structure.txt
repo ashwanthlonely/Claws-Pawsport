@@ -1,0 +1,17 @@
+clawspawsport/
+│── index.html             (Home - services overview)
+│── products.html          (Pet products page)
+│── places.html            (Pet-friendly places page)
+│── about.html             (About us page)
+│── contact.html           (Contact page)
+│
+├── css/
+│   ├── style.css          (main stylesheet)
+│   └── theme.css          (light/dark mode styles)
+│
+├── js/
+│   └── theme-toggle.js    (dark/light toggle script)
+│
+└── assets/
+    ├── images/            (logo, product, and banner images)
+    └── icons/             (social icons, menu, etc.)
