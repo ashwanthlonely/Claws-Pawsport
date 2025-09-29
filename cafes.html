@@ -31,7 +31,7 @@
 
 <section class="search-and-filter-bar">
     <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search by cafe name, city, cuisine, or amenity...">
+        <input type="text" id="searchInput" placeholder="Search by cafe name, city, specialty...">
     </div>
     <div class="filter-controls">
         <label for="cityFilter">City:</label>
@@ -41,14 +41,16 @@
 
         <label for="entryFeeFilter">Entry Fee:</label>
         <select id="entryFeeFilter">
-            <option value="">Any Fee</option>
+            <option value="">Any</option>
             <option value="None">No Entry Fee</option>
             <option value="Fee">Has Entry Fee</option>
         </select>
         
-        <label for="cuisineFilter">Cuisine:</label>
-        <select id="cuisineFilter">
-            <option value="">Any Cuisine</option>
+        <label for="sizeFilter">Pet Size:</label>
+        <select id="sizeFilter">
+            <option value="">Any Size</option>
+            <option value="Small">Small Pets Only</option>
+            <option value="All">All Sizes Welcome</option>
             </select>
 
         <label for="statusFilter">Status:</label>
@@ -60,6 +62,7 @@
 </section>
 <section id="cafes-container" class="places-grid">
   <p>Loading cafes...</p>
+  
   </section>
 
 <footer>
