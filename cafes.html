@@ -29,19 +29,44 @@
   <p>Discover amazing cafes across India where your furry friends are always welcome!</p>
 </section>
 
-<!-- <section class="search-bar">
-  <input type="text" id="searchInput" placeholder="Search by city or cafe name...">
-</section> -->
+<section class="search-and-filter-bar">
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by cafe name, city, cuisine, or amenity...">
+    </div>
+    <div class="filter-controls">
+        <label for="cityFilter">City:</label>
+        <select id="cityFilter">
+            <option value="">All Cities</option>
+            </select>
 
+        <label for="entryFeeFilter">Entry Fee:</label>
+        <select id="entryFeeFilter">
+            <option value="">Any Fee</option>
+            <option value="None">No Entry Fee</option>
+            <option value="Fee">Has Entry Fee</option>
+        </select>
+        
+        <label for="cuisineFilter">Cuisine:</label>
+        <select id="cuisineFilter">
+            <option value="">Any Cuisine</option>
+            </select>
+
+        <label for="statusFilter">Status:</label>
+        <select id="statusFilter">
+            <option value="Open">Open Now</option>
+            <option value="All">All Cafes</option>
+        </select>
+    </div>
+</section>
 <section id="cafes-container" class="places-grid">
   <p>Loading cafes...</p>
-</section>
+  </section>
 
 <footer>
   <p>&copy; 2025 ClawsPawsPort | Made with ❤️ in India</p>
 </footer>
 
 <script src="js/theme-toggle.js"></script>
-<script src="js/cafes.js"></script> <!-- ✅ Correct path -->
+<script src="js/cafes.js"></script>
 </body>
 </html>
